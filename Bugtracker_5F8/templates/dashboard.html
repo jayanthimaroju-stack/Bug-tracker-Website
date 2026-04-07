@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<h2 class="dashboard-title">Dashboard</h2>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-card total">
+        <h3>Total Bugs</h3>
+        <p>{{ total }}</p>
+    </div>
+
+    <div class="dashboard-card open">
+        <h3>Open Bugs</h3>
+        <p>{{ open_bugs }}</p>
+    </div>
+
+    <div class="dashboard-card closed">
+        <h3>Closed Bugs</h3>
+        <p>{{ closed }}</p>
+    </div>
+
+</div>
+
+{% endblock %}

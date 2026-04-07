@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Add Bug{% endblock %}
+
+{% block content %}
+<h2>Add Bug</h2>
+
+<form method="POST">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="description">Description:</label><br>
+    <input type="text" id="description" name="description" required><br><br>
+
+    <label for="assigned_to">Assign To:</label><br>
+    <input type="text" id="assigned_to" name="assigned_to" required><br><br>
+
+    <label for="status">Status:</label><br>
+    <select id="status" name="status">
+        <option>Open</option>
+        <option>In Progress</option>
+        <option>Fixed</option>
+        <option>Closed</option>
+    </select><br><br>
+
+    <label for="priority">Priority:</label><br>
+    <select id="priority" name="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+        <option>Critical</option>
+    </select><br><br>
+
+    <button type="submit">Add Bug</button>
+</form>
+{% endblock %}

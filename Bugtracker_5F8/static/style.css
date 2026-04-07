@@ -1,0 +1,149 @@
+/* ---------- BODY ---------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Original background image */
+    background-color: #1e272e; /* fallback */
+    background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    color: black;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: #2c3e50; 
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+/* ---------- SMALL LOGIN/REGISTER/FORM BOX ---------- */
+.small-card {
+    width: 320px;
+    background: white;   /* solid white */
+    padding: 25px;
+    margin: 80px auto;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------- INPUT BOXES ---------- */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 14px;
+    outline: none;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    font-size: 13px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- MAIN CONTENT BOX ---------- */
+.main-card {
+    width: 90%;
+    background: white;   /* solid white */
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.dashboard-card {
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Colors for dashboard cards */
+.total { background: linear-gradient(45deg, #2980b9, #6dd5fa); }  /* Blue */
+.open  { background: linear-gradient(45deg, #f39c12, #f1c40f); }  /* Yellow */
+.closed{ background: linear-gradient(45deg, #27ae60, #2ecc71); }  /* Green */
+
+.dashboard-card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ---------- VIEW BUGS ---------- */
+.table-box {
+    background: white;  /* solid white */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

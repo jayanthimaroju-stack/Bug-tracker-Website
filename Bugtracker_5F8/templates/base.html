@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bug Tracker{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar after login -->
+    {% if session.get("user") %}
+    <div class="navbar">
+        <a href="/home">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/view_bugs">View Bugs</a>
+        <a href="/add_bug">Add Bug</a>
+        <a href="/logout">Logout</a>
+    </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <div class="{% if session.get('user') %}main-card{% else %}small-card{% endif %}">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

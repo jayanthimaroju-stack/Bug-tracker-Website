@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}View Bugs{% endblock %}
+
+{% block content %}
+
+<h2>View Bugs</h2>
+
+<div class="table-box">
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Assigned</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Action</th>
+    </tr>
+
+    {% for bug in bugs %}
+
+    <tr>
+        <td>{{ bug.id }}</td>
+        <td>{{ bug.title }}</td>
+        <td>{{ bug.description }}</td>
+        <td>{{ bug.assigned_to }}</td>
+        <td>{{ bug.status }}</td>
+        <td>{{ bug.priority }}</td>
+
+        <td>
+            <a href="/toggle/{{ bug.id }}">Toggle</a> |
+            <a href="/delete_bug/{{ bug.id }}">Delete</a>
+        </td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}
